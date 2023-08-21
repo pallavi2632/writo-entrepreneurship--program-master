@@ -1,32 +1,12 @@
-import React, {useEffect, useRef} from "react";
 import "./index.css";
-import processImg from "../../images/entre-green-with-bg.svg";
+import renderImg from "../../images/entre-green-with-bg.png"
 
 const RoadMap = () => {
-  const imageRef = useRef(null);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollX;
-      imageRef.current.style.transform = `translateX(${scrollPosition}px)`;
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
   return (
-    
-          <div class="image-container">
-          <img ref={imageRef}
-            src={processImg}
-            alt="process img"
-          />
-        </div>
-      
+    <div className="image-container">
+      <img src={renderImg} alt="Process Image" />
+    </div>
   );
 };
-
 
 export default RoadMap;
