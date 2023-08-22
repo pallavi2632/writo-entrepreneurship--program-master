@@ -102,7 +102,7 @@ function App() {
         </h2>
       </div>
 
-      <div className="flex lg:justify-around lg:mt-[5rem]  items-center  xxs:flex-col xxs:ml-2 md:mx-8 lg:flex-row ">
+      <div>
         <RoadMap />
       </div>
 
